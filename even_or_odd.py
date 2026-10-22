@@ -14,6 +14,6 @@ for num in value:
 print("The largest number is ", largest)
 
 #palindrome
-text = "abba"
-rev = reversed(text)
-print(rev)
+#text = "abba"
+#rev = reversed(text)
+#print(rev)
