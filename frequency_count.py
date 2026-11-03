@@ -8,3 +8,4 @@ for i in range(len(num)):
         dep[num[i]] = 1
 
 print(dep)
+
