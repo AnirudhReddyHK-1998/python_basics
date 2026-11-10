@@ -92,6 +92,79 @@
 #         rest.append(num[i])
 # print(rest)
 
+#revering a string
+# name = "python"
+# rev = ""
+# for i in range(len(name)):
+#     rev = name[i] + rev
+# print(rev)
+
+# #vowels count
+# text = "Python Programming"
+# count = 0
+# cons = 0
+# for char in text:
+#     if char.lower() in "aeiou":
+#         count += 1
+#     elif char.isalpha():
+#         cons += 1
+# print("vowels are", count)
+# print("Consonants are", cons)
+
+#find the duplicate
+# text = "programming"
+# org = []
+# dup = []
+# for i in range(len(text)):
+#     if text[i] not in org:
+#         org.append(text[i])
+#     elif text[i] not in dup:
+#         dup.append(text[i])
+# print(dup)
+
+#Find the first non-repeating character
+# text = "programming"
+# cou = {}
+# for i in range(len(text)):
+#     if text[i] in cou:
+#         cou[text[i]] += 1
+#     else:
+#         cou[text[i]] = 1
+# for char in cou.keys():
+#     if cou[char] == 1:
+#         print(char)
+#         break
+
+#Find the first repeating character
+# text = "programming"
+# seen = []
+#
+# for char in text:
+#     if char in seen:
+#         print(char)
+#         break
+#     else:
+#         seen.append(char)
+
+#Check whether two strings are anagrams
+str1 = "listen"
+str2 = "silent"
+dicstr1 = {}
+dicstr2 = {}
+for i in range (len(str1)):
+    if str1[i] in dicstr1:
+        dicstr1[str1[i]] += 1
+    else:
+        dicstr1[str1[i]] = 1
+for i in range (len(str2)):
+    if str2[i] in dicstr2:
+        dicstr2[str2[i]] += 1
+    else:
+        dicstr2[str2[i]] = 1
+if dicstr1 == dicstr2:
+    print("anagram")
+else:
+    print("not anagram")
 
 
 
