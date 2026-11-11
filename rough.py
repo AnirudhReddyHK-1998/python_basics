@@ -136,35 +136,43 @@
 #         break
 
 #Find the first repeating character
-# text = "programming"
-# seen = []
-#
-# for char in text:
-#     if char in seen:
-#         print(char)
-#         break
-#     else:
-#         seen.append(char)
+text = "programming"
+seen = []
+
+for char in text:
+    if char in seen:
+        print(char)
+        break
+    else:
+        seen.append(char)
 
 #Check whether two strings are anagrams
-str1 = "listen"
-str2 = "silent"
-dicstr1 = {}
-dicstr2 = {}
-for i in range (len(str1)):
-    if str1[i] in dicstr1:
-        dicstr1[str1[i]] += 1
-    else:
-        dicstr1[str1[i]] = 1
-for i in range (len(str2)):
-    if str2[i] in dicstr2:
-        dicstr2[str2[i]] += 1
-    else:
-        dicstr2[str2[i]] = 1
-if dicstr1 == dicstr2:
-    print("anagram")
-else:
-    print("not anagram")
+# str1 = "listen"
+# str2 = "silent"
+# dicstr1 = {}
+# dicstr2 = {}
+# for i in range (len(str1)):
+#     if str1[i] in dicstr1:
+#         dicstr1[str1[i]] += 1
+#     else:
+#         dicstr1[str1[i]] = 1
+# for i in range (len(str2)):
+#     if str2[i] in dicstr2:
+#         dicstr2[str2[i]] += 1
+#     else:
+#         dicstr2[str2[i]] = 1
+# if dicstr1 == dicstr2:
+#     print("anagram")
+# else:
+#     print("not anagram")
+
+#Find the missing number in a list
+# num = [1, 22, 34, 5, 6]
+# for i in range(1, 7):
+#     if i not in num:
+#         print(i)
+
+
 
 
 
