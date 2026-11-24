@@ -18,6 +18,8 @@
 # else:
 #     print("not palindrome")
 #
+from jsonschema.validators import extend
+from pandas.core.dtypes import common
 
 #frequency count of letters
 # text = "bananna"
@@ -136,15 +138,15 @@
 #         break
 
 #Find the first repeating character
-text = "programming"
-seen = []
-
-for char in text:
-    if char in seen:
-        print(char)
-        break
-    else:
-        seen.append(char)
+# text = "programming"
+# seen = []
+#
+# for char in text:
+#     if char in seen:
+#         print(char)
+#         break
+#     else:
+#         seen.append(char)
 
 #Check whether two strings are anagrams
 # str1 = "listen"
@@ -172,8 +174,50 @@ for char in text:
 #     if i not in num:
 #         print(i)
 
+#Move all zeros to the end of a list
+# num = [0, 1, 0, 3, 12]
+# zero = []
+# non_zero = []
+# for i in range(len(num)):
+#     if num[i] == 0:
+#         zero.append(num[i])
+#     else:
+#         non_zero.append(num[i])
+# non_zero.extend(zero)
+#
+# print(non_zero)
+
+#Find the common elements in two lists
+# list1 = [1, 2, 3, 3, 4]
+# list2 = [3, 4, 5]
+# common_ele = []
+# for ele in list1:
+#     if ele in list2 and ele not in common_ele:
+#         common_ele.append(ele)
+# print(common_ele)
 
 
+# def common_ele():
+#     list1 = [1, 2, 3, 3, 4]
+#     list2 = [3, 4, 5]
+#     commmon = []
+#     for ele in list1:
+#         if ele in list2 and ele not in commmon:
+#             commmon.append(ele)
+#     print(commmon)
+# common_ele()
+
+def common_elements(list1, list2):
+    common = []
+    for ele in list1:
+             if ele in list2 and ele not in common:
+                 common.append(ele)
+    return common
+list1 = [1, 2, 3, 3, 4]
+list2 = [3, 4, 5]
+
+result = common_elements(list1, list2)
+print(result)
 
 
 
